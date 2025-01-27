@@ -20,17 +20,17 @@ __all:
 
 # Set variables while building with aosp build system
 ARCH := arm64
+DEPMOD := depmod
 CROSS_COMPILE := aarch64-linux-gnu-
-PLATFORM_VERSION ?= 13
-ANDROID_MAJOR_VERSION ?= t
+PLATFORM_VERSION ?= 14
 LLVM := 1
 LLVM_IAS := 1
 
 # Export them
 export ARCH
+export DEPMOD
 export CROSS_COMPILE
 export PLATFORM_VERSION
-export ANDROID_MAJOR_VERSION
 export LLVM
 export LLVM_IAS
 

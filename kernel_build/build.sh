@@ -57,12 +57,13 @@ PARENT_DIR="$(readlink -f ${DIR}/..)"
 export CROSS_COMPILE="$PARENT_DIR/clang-r450784d/bin/aarch64-linux-gnu-"
 export CC="$PARENT_DIR/clang-r450784d/bin/clang"
 
-export PLATFORM_VERSION=13
-export ANDROID_MAJOR_VERSION=t
 export PATH="$PARENT_DIR/build-tools/path/linux-x86:$PARENT_DIR/clang-r450784d/bin:$PATH"
-export TARGET_SOC=s5e3830
-export LLVM=1 LLVM_IAS=1
+export DTC_FLAGS="-@"
+export PLATFORM_VERSION=14
+export LLVM=1
+export DEPMOD=depmod
 export ARCH=arm64
+export TARGET_SOC=s5e3830
 
 if [ ! -d "$PARENT_DIR/clang-r450784d" ]; then
     git clone https://gitlab.com/tejas101k/clang-r450784d.git/ "$PARENT_DIR/clang-r450784d" --depth=1
