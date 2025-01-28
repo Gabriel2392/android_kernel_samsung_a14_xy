@@ -17,6 +17,7 @@ jobs:
         sudo apt-get install brotli zip zstd tar lz4 cpio xz-utils pahole libelf-dev python2 -y || sudo apt-get install python2 pahole libelf-dev brotli zip zstd tar lz4 cpio xz-utils -y
     - name: Build
       run: |
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
         bash build.sh
     - name: Upload
       uses: actions/upload-artifact@v4
