@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XY_VERSION="R1.0-RQT"
+XY_VERSION="R1.3"
 
 set -e
 
@@ -176,8 +176,8 @@ rm -f "$OUT_KERNELTAR"
 lz4 -c -12 -B6 --content-size "$OUT_BOOTIMG" > boot.img.lz4
 lz4 -c -12 -B6 --content-size "$OUT_VENDORBOOTIMG" > vendor_boot.img.lz4
 tar -cf "$OUT_KERNELTAR" boot.img.lz4 vendor_boot.img.lz4
-cd "$DIR"
 rm -f boot.img.lz4 vendor_boot.img.lz4
+cd "$DIR"
 echo "Done! Output: $OUT_KERNELTAR"
 
 echo "Cleaning..."
