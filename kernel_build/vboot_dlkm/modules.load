@@ -255,3 +255,4 @@ sec_audio_sysfs.ko
 sec_audio_debug.ko
 tcp_westwood.ko
 tcp_htcp.ko
+rtl8xxxu.ko
