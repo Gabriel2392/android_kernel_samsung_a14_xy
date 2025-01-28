@@ -132,7 +132,7 @@ echo "Building boot image..."
 $MKBOOTIMG --header_version 4 \
     --kernel "$OUT_KERNEL" \
     --output "$OUT_BOOTIMG" \
-    --os_version 13.0.0 \
+    --os_version 14.0.0 \
     --os_patch_level 2025-01 || exit 1
 
 echo "Done!"
@@ -153,7 +153,7 @@ $MKBOOTIMG --header_version 4 \
     --ramdisk_type dlkm \
     --ramdisk_name dlkm \
     --vendor_ramdisk_fragment "$(pwd)/ramdisk_dlkm.lz4" \
-    --os_version 13.0.0 \
+    --os_version 14.0.0 \
     --os_patch_level 2025-01 || exit 1
 
 cd "$DIR"

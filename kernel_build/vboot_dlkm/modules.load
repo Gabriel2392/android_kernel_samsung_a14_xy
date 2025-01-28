@@ -1,5 +1,6 @@
 exynos-chipid_v2.ko
 exynos-reboot.ko
+sec_debug_base_early.ko
 clk_exynos.ko
 hardlockup-watchdog.ko
 exynos_mct.ko
@@ -7,6 +8,7 @@ exynos_tty.ko
 pinctrl-samsung-core.ko
 i2c-exynos5.ko
 i2c-s3c2410.ko
+sec_debug_mode.ko
 ems.ko
 zsmalloc.ko
 lzo.ko
@@ -183,6 +185,20 @@ s2mu106-usbpd.ko
 muic_platform.ko
 sec_vibrator.ko
 dev_ril_bridge.ko
+sec_debug.ko
+sec_debug_test.ko
+sec_debug_dprm.ko
+sec_debug_dprt.ko
+sec_debug_extra_info.ko
+sec_debug_hw_param.ko
+sec_debug_reset_reason.ko
+sec_debug_wdd_info.ko
+sec_debug_dtask.ko
+sec_debug_softdog.ko
+sec_debug_sched_info.ko
+sec_debug_stacktrace.ko
+sec_debug_hardlockup_info.ko
+sec_debug_sched_report.ko
 dropdump.ko
 switch_class.ko
 vbus_notifier.ko
