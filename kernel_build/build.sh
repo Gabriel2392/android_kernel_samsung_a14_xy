@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XY_VERSION="R1.3"
+XY_VERSION="R2.5-P"
 
 set -e
 
@@ -133,7 +133,7 @@ $MKBOOTIMG --header_version 4 \
     --kernel "$OUT_KERNEL" \
     --output "$OUT_BOOTIMG" \
     --os_version 14.0.0 \
-    --os_patch_level 2025-01 || exit 1
+    --os_patch_level 2025-04 || exit 1
 
 echo "Done!"
 echo "Building vendor_boot image..."
@@ -154,7 +154,7 @@ $MKBOOTIMG --header_version 4 \
     --ramdisk_name dlkm \
     --vendor_ramdisk_fragment "$(pwd)/ramdisk_dlkm.lz4" \
     --os_version 14.0.0 \
-    --os_patch_level 2025-01 || exit 1
+    --os_patch_level 2025-04 || exit 1
 
 cd "$DIR"
 
